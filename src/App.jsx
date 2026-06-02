@@ -107,7 +107,7 @@ export default function BPOTaskForcePortal() {
     }
   };
 
-  if (!isAuthenticated) return <PasswordGate onUnlock={() => setIsAuthenticated(true)} />;
+ 
 
   const order = orders.find(o => o.id === selectedId) || orders[0];
   const filteredOrders = useMemo(() => {
@@ -116,7 +116,7 @@ export default function BPOTaskForcePortal() {
         .toLowerCase().includes(query.toLowerCase())
     );
   }, [orders, query]);
-
+if (!isAuthenticated) return <PasswordGate onUnlock={() => setIsAuthenticated(true)} />;
   const photoCount = order ? Object.values(order.photos || {}).filter(Boolean).length : 0;
   const photoTotal = order ? Object.keys(order.photos || {}).length : 0;
   const photoPercent = photoTotal > 0 ? Math.round((photoCount / photoTotal) * 100) : 0;
