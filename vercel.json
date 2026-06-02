@@ -1,12 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "env": {
-    "SPREADSHEET_ID": "@spreadsheet_id",
-    "GOOGLE_PROJECT_ID": "@google_project_id",
-    "GOOGLE_PRIVATE_KEY_ID": "@google_private_key_id",
-    "GOOGLE_PRIVATE_KEY": "@google_private_key",
-    "GOOGLE_CLIENT_EMAIL": "@google_client_email",
-    "GOOGLE_CLIENT_ID": "@google_client_id"
-  }
+  "outputDirectory": "build"
 }
