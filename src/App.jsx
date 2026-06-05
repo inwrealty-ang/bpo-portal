@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { Camera, MapPin, Clock, DollarSign, Search, CheckCircle2, AlertTriangle, Users, ClipboardList, FileText, Navigation, CreditCard, Lock, LogOut } from "lucide-react";
+import { Camera, MapPin, Clock, DollarSign, Search, CheckCircle2, AlertTriangle, ClipboardList, FileText, Navigation, CreditCard, Lock, LogOut } from "lucide-react";
 
 const API_URL = process.env.REACT_APP_API_URL || "/api";
 
